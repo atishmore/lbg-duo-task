@@ -24,7 +24,7 @@ pipeline {
 		    else
 		      sleep 1
         fi
-	docker rmi duo-task:v1
+	docker rmi duo-task:v2
         '''
       }
     }
