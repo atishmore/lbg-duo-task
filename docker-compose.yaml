@@ -6,8 +6,6 @@ services:
     ports:
       - target: 80
         published: 80
-    depends_on:
-      - requirements.txt
     networks:
       - duo-net 
 networks:
