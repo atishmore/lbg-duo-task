@@ -1,0 +1,14 @@
+version: "3.7"
+services:
+  duo-task-client:
+    image: duo-task-image
+    build: .
+    ports:
+      - target: 80
+        published: 80
+    depends_on:
+      - requirements.txt
+    networks:
+      - duo-net 
+networks:
+  chaperoo-net:
