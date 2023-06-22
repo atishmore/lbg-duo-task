@@ -16,7 +16,7 @@ services:
     networks:
       - duo-net
     depends_on:
-      flask-app
+      - flask-app
     volumes:
       - type: bind
         source: ./nginx.conf
